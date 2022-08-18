@@ -91,8 +91,6 @@ public class XPExtractorBlockEntity extends BlockEntity implements ImplementedIn
             world.setBlockState(pos, state.with(bottle, XPExtractorBottleType.MEDIUM));
         } else if (itemInHand == ModItems.LARGE_BOTTLE) {
             world.setBlockState(pos, state.with(bottle, XPExtractorBottleType.LARGE));
-        } else if (itemInHand == ModItems.BEST_XP_BOTTLE) {
-            world.setBlockState(pos, state.with(bottle, XPExtractorBottleType.SMALL_FILLED));
         }
     }
 

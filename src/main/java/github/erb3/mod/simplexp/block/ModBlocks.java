@@ -17,7 +17,7 @@ import net.minecraft.util.registry.Registry;
 public class ModBlocks {
 
     public static final Block XP_EXTRACTOR = registerBlock("xp_extractor",
-            new XPExtractor(FabricBlockSettings.of(Material.METAL).strength(3.5f).requiresTool()), ModItemGroup.SIMPLE_XP);
+            new XPExtractor(FabricBlockSettings.of(Material.METAL).strength(3.5f).requiresTool().nonOpaque()), ModItemGroup.SIMPLE_XP);
 
     private static Block registerBlock(String name, Block block, ItemGroup tab) {
         registerBlockItem(name, block, tab);
