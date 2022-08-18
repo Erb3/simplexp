@@ -1,0 +1,10 @@
+{
+  "item.simplexp.basic_xp_bottle": "Basic Experience bottle",
+  "item.simplexp.better_xp_bottle": "Better Experience Bottle",
+  "item.simplexp.best_xp_bottle": "Best Experience Bottle",
+  "item.simplexp.small_bottle": "Small Sized Bottle",
+  "item.simplexp.medium_bottle": "Medium Sized Bottle",
+  "item.simplexp.large_bottle": "Large Sized Bottle",
+  "block.simplexp.xp_extractor": "Experience Extractor",
+  "itemGroup.simplexp.simple_xp": "Simple XP"
+}

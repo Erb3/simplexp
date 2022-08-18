@@ -1,29 +1,32 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "simplexp",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Simple XP",
+  "description": "A simple mod to store XP! Made for ModFest:Singularity",
   "authors": [
-    "Me!"
+    "Erb3"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://github.com/Erb3/simplexp",
+    "sources": "https://github.com/Erb3/simplexp"
   },
 
-  "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "license": "WTFPL",
+  "icon": "assets/simplexp/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "github.erb3.mod.simplexp.SimpleXP"
+    ],
+    "client": [
+      "github.erb3.mod.simplexp.SimpleXPClient"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "simplexp.mixins.json"
   ],
 
   "depends": {
@@ -31,8 +34,5 @@
     "fabric": "*",
     "minecraft": "~1.19",
     "java": ">=17"
-  },
-  "suggests": {
-    "another-mod": "*"
   }
 }

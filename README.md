@@ -1,9 +1,28 @@
-# Fabric Example Mod
+# Simplexp - Simple XP
 
-## Setup
+Super simple storage of XP
+Made for ModFest: Singularity 2022
 
-For setup instructions please see the [fabric wiki page](https://fabricmc.net/wiki/tutorial:setup) that relates to the IDE that you are using.
+## MVP
+* [x] Setup
+* [x] Different Empty bottles
+* [x] Different Experience Bottles
+* [x] Xp extractor
 
-## License
+## After that
+* [ ] Better Mod Logo
+* [x] Xp extractor models for empty bottles
+* [ ] Xp extractor modles for filled bottles
+* [ ] Sounds
+* [ ] Advancements
+* [ ] Modrinth page
+* [ ] More translations
+* [ ] Particles
 
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+## FINISHED
+
+* Full hopper support
+* Bottles
+* Empty Bottles
+* Simple one-click interactions
+* Bulletproof (except when you find one of the many bugs)

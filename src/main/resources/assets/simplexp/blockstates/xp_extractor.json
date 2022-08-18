@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "bottle=none": {
+      "model": "simplexp:block/xp_extractor"
+    },
+    "bottle=small": {
+      "model": "simplexp:block/states/small_bottle"
+    },
+    "bottle=medium": {
+      "model": "simplexp:block/states/medium_bottle"
+    },
+    "bottle=large": {
+      "model": "simplexp:block/states/large_bottle"
+    },
+    "bottle=small_f": {
+      "model": "simplexp:block/states/small_bottle_f"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "miencraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "simplexp:xp_extractor"
+        }
+      ]
+    }
+  ]
+}
