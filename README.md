@@ -15,14 +15,9 @@ Made for ModFest: Singularity 2022
 * [ ] Xp extractor modles for filled bottles
 * [ ] Sounds
 * [ ] Advancements
-* [ ] Modrinth page
+* [x] Modrinth page
 * [ ] More translations
 * [ ] Particles
 
-## FINISHED
-
-* Full hopper support
-* Bottles
-* Empty Bottles
-* Simple one-click interactions
-* Bulletproof (except when you find one of the many bugs)
+## I want to help!
+Feel free to send a poll request. ❤️
