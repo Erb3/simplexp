@@ -13,16 +13,16 @@ import net.minecraft.util.hit.HitResult;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldEvents;
 
-public class XPBottleEntity extends ThrownItemEntity {
+public class XpBottleEntity extends ThrownItemEntity {
     private int xpPoints = 7;
     private int particleColor = PotionUtil.getColor(Potions.LUCK);
 
-    public XPBottleEntity(EntityType<? extends ThrownItemEntity> entityType, World world) {
+    public XpBottleEntity(EntityType<? extends ThrownItemEntity> entityType, World world) {
         super(entityType, world);
     }
 
-    public XPBottleEntity(World world, LivingEntity owner) {
-        super((EntityType<? extends ThrownItemEntity>)EntityType.EXPERIENCE_BOTTLE, owner, world);
+    public XpBottleEntity(World world, LivingEntity owner) {
+        super(EntityType.EXPERIENCE_BOTTLE, owner, world);
     }
 
     public void setXPpoints(int amount) {
