@@ -11,7 +11,6 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.inventory.Inventory;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.EnumProperty;
 import net.minecraft.util.ActionResult;
@@ -49,10 +48,12 @@ public class XPExtractor extends Block implements BlockEntityProvider {
         if (!blockEntity.getStack(1).isEmpty()) {
             player.getInventory().offerOrDrop(blockEntity.getStack(1));
             blockEntity.removeStack(1);
+            blockEntity.markDirty();
             world.setBlockState(blockPos, blockState.with(bottle, XPExtractorBottleType.NONE));
         } else if (!blockEntity.getStack(0).isEmpty()) {
             player.getInventory().offerOrDrop(blockEntity.getStack(0));
             blockEntity.removeStack(0);
+            blockEntity.markDirty();
             world.setBlockState(blockPos, blockState.with(bottle, XPExtractorBottleType.NONE));
         } else {
             Item itemInHand = player.getStackInHand(hand).getItem().asItem();
@@ -62,7 +63,7 @@ public class XPExtractor extends Block implements BlockEntityProvider {
                 player.getStackInHand(hand).setCount(toPut.getCount() - 1);
                 toPut.setCount(1);
                 blockEntity.setStack(0, toPut);
-                ServerPlayerEntity p = (ServerPlayerEntity) player;
+                blockEntity.markDirty();
             }
         }
 
@@ -90,6 +91,7 @@ public class XPExtractor extends Block implements BlockEntityProvider {
 
             blockEntity.setStack(1, ModItems.BASIC_XP_BOTTLE.getDefaultStack());
             blockEntity.removeStack(0);
+            blockEntity.markDirty();
         } else if (i == ModItems.MEDIUM_BOTTLE) {
             if (!(p.totalExperience >= 550)) {
                 return;
@@ -98,6 +100,7 @@ public class XPExtractor extends Block implements BlockEntityProvider {
 
             blockEntity.setStack(1, ModItems.BETTER_XP_BOTTLE.getDefaultStack());
             blockEntity.removeStack(0);
+            blockEntity.markDirty();
         } else if (i == ModItems.LARGE_BOTTLE) {
             if (!(p.totalExperience >= 2920)) {
                 return;
@@ -106,6 +109,7 @@ public class XPExtractor extends Block implements BlockEntityProvider {
 
             blockEntity.setStack(1, ModItems.BEST_XP_BOTTLE.getDefaultStack());
             blockEntity.removeStack(0);
+            blockEntity.markDirty();
         }
     }
 
