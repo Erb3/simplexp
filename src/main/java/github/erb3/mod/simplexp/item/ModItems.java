@@ -11,13 +11,13 @@ import net.minecraft.util.registry.Registry;
 
 public class ModItems {
     public static final Item BASIC_XP_BOTTLE = registerItem("basic_xp_bottle",
-            new xpBottle(7, PotionUtil.getColor(Potions.WATER),
+            new xpBottle(55, PotionUtil.getColor(Potions.WATER),
                     new FabricItemSettings().group(ModItemGroup.SIMPLE_XP)));
     public static final Item BETTER_XP_BOTTLE = registerItem("better_xp_bottle",
-            new xpBottle(35, PotionUtil.getColor(Potions.FIRE_RESISTANCE),
+            new xpBottle(550, PotionUtil.getColor(Potions.FIRE_RESISTANCE),
                     new FabricItemSettings().group(ModItemGroup.SIMPLE_XP)));
     public static final Item BEST_XP_BOTTLE = registerItem("best_xp_bottle",
-            new xpBottle(100, PotionUtil.getColor(Potions.LEAPING),
+            new xpBottle(2920, PotionUtil.getColor(Potions.LEAPING),
                     new FabricItemSettings().group(ModItemGroup.SIMPLE_XP)));
 
     public static final Item SMALl_BOTTLE = registerItem("small_bottle",
