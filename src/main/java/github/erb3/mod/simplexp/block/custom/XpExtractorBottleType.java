@@ -12,7 +12,7 @@ import java.util.Set;
 
 public enum XpExtractorBottleType implements StringIdentifiable {
     NONE("none", Items.AIR, Items.AIR, 0),
-    SMALL("small", ModItems.SMALl_BOTTLE, ModItems.BASIC_XP_BOTTLE, 55),
+    SMALL("small", ModItems.SMALL_BOTTLE, ModItems.BASIC_XP_BOTTLE, 55),
     MEDIUM("medium", ModItems.MEDIUM_BOTTLE, ModItems.BETTER_XP_BOTTLE, 550),
     LARGE("large", ModItems.LARGE_BOTTLE, ModItems.BEST_XP_BOTTLE, 2920);
 

@@ -25,14 +25,14 @@ public class ModItems {
             new XpBottleItem(2920, PotionUtil.getColor(Potions.LEAPING),
                     new FabricItemSettings().group(ModItemGroup.SIMPLE_XP)));
 
-    public static final Item SMALl_BOTTLE = add("small_bottle",
+    public static final Item SMALL_BOTTLE = add("small_bottle",
             new Item(new FabricItemSettings().group(ModItemGroup.SIMPLE_XP)));
     public static final Item MEDIUM_BOTTLE = add("medium_bottle",
             new Item(new FabricItemSettings().group(ModItemGroup.SIMPLE_XP)));
     public static final Item LARGE_BOTTLE = add("large_bottle",
             new Item(new FabricItemSettings().group(ModItemGroup.SIMPLE_XP)));
 
-    public static final Set<Item> BOTTLES = Set.of(SMALl_BOTTLE, MEDIUM_BOTTLE, LARGE_BOTTLE);
+    public static final Set<Item> BOTTLES = Set.of(SMALL_BOTTLE, MEDIUM_BOTTLE, LARGE_BOTTLE);
 
     private static <T extends Item> T add(String name, T item) {
         ITEMS.put(name, item);
