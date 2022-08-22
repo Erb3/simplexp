@@ -20,14 +20,8 @@
   "entrypoints": {
     "main": [
       "github.erb3.mod.simplexp.SimpleXP"
-    ],
-    "client": [
-      "github.erb3.mod.simplexp.SimpleXPClient"
     ]
   },
-  "mixins": [
-    "simplexp.mixins.json"
-  ],
 
   "depends": {
     "fabricloader": ">=0.14.6",
