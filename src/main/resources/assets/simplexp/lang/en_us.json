@@ -6,5 +6,9 @@
   "item.simplexp.medium_bottle": "Medium Sized Bottle",
   "item.simplexp.large_bottle": "Large Sized Bottle",
   "block.simplexp.xp_extractor": "Experience Extractor",
-  "itemGroup.simplexp.simple_xp": "Simple XP"
+  "itemGroup.simplexp.simple_xp": "Simple XP",
+  "advancement.simplexp.xp_extractor.title": "Experience drainer",
+  "advancement.simplexp.xp_extractor.description": "Craft the experience extractor!",
+  "advancement.simplexp.best_xp_bottle.title": "Experience lover",
+  "advancement.simplexp.best_xp_bottle.description": "Convert experience into a best experience bottle!"
 }

@@ -1,0 +1,37 @@
+{
+  "display": {
+    "icon": {
+      "item": "simplexp:xp_extractor"
+    },
+    "title": {
+      "translate": "advancement.simplexp.xp_extractor.title"
+    },
+    "description": {
+      "translate": "advancement.simplexp.xp_extractor.description"
+    },
+    "background": "minecraft:textures/block/amethyst_block.png",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "xp_extractor": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "simplexp:xp_extractor"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "xp_extractor"
+    ]
+  ]
+}

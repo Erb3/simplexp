@@ -1,0 +1,38 @@
+{
+  "display": {
+    "icon": {
+      "item": "simplexp:best_xp_bottle"
+    },
+    "title": {
+      "translate": "advancement.simplexp.best_xp_bottle.title"
+    },
+    "description": {
+      "translate": "advancement.simplexp.best_xp_bottle.description"
+    },
+    "background": "minecraft:textures/block/amethyst_block.png",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "best_xp_bottle": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "simplexp:best_xp_bottle"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "parent": "simplexp:xp_extractor",
+  "requirements": [
+    [
+      "best_xp_bottle"
+    ]
+  ]
+}
