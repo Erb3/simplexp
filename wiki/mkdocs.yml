@@ -1,0 +1,9 @@
+site_name: Simple XP wiki
+site_url: https://erb3.github.io/simplexp
+repo_url: https://github.com/Erb3/simplexp
+repo_name: GitHub
+edit_uri: /Erb3/simplexp/wiki
+site_dir: out
+site_description: Wiki/docs for simplexp fabric/quilt mod
+theme:
+  name: material

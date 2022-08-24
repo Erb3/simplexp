@@ -2,7 +2,7 @@
 
 .gradle/
 build/
-out/
+/out/
 classes/
 
 # eclipse
