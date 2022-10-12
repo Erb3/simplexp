@@ -16,13 +16,13 @@ import java.util.Set;
 public class ModItems {
     private static final HashMap<String, Item> ITEMS = new LinkedHashMap<>();
     public static final Item BASIC_XP_BOTTLE = add("basic_xp_bottle",
-            new XpBottleItem(55, PotionUtil.getColor(Potions.WATER),
+            new XpBottleItem(55, PotionUtil.getColor(Potions.WATER), 1.0f, 1.3f,
                     new FabricItemSettings().group(ModItemGroup.SIMPLE_XP)));
     public static final Item BETTER_XP_BOTTLE = add("better_xp_bottle",
-            new XpBottleItem(550, PotionUtil.getColor(Potions.FIRE_RESISTANCE),
+            new XpBottleItem(550,  PotionUtil.getColor(Potions.FIRE_RESISTANCE), 1.3f, 1.6f,
                     new FabricItemSettings().group(ModItemGroup.SIMPLE_XP)));
     public static final Item BEST_XP_BOTTLE = add("best_xp_bottle",
-            new XpBottleItem(2920, PotionUtil.getColor(Potions.LEAPING),
+            new XpBottleItem(2920, PotionUtil.getColor(Potions.LEAPING), 1.7f, 2.5f,
                     new FabricItemSettings().group(ModItemGroup.SIMPLE_XP)));
 
     public static final Item SMALL_BOTTLE = add("small_bottle",

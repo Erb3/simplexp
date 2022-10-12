@@ -17,8 +17,8 @@ public class XpBottleEntity extends ThrownItemEntity {
     private int xpPoints = 7;
     private int particleColor = PotionUtil.getColor(Potions.LUCK);
 
-    public XpBottleEntity(EntityType<? extends ThrownItemEntity> entityType, World world) {
-        super(entityType, world);
+    public XpBottleEntity(double x, double y, double z, World world) {
+        super(EntityType.EXPERIENCE_BOTTLE, x, y, z, world);
     }
 
     public XpBottleEntity(World world, LivingEntity owner) {
