@@ -1,4 +1,0 @@
-@DEPRECATED
-[REDACTED FOR PRIVACY]
-This file once contained everyone that helped me solve bugs.
-Huge thanks to Prospector for refactoring tho!
